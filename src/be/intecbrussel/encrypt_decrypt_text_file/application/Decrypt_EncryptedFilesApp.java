@@ -21,7 +21,7 @@ public class Decrypt_EncryptedFilesApp {
         WriteTextFile writeDecryptedTextFile = new WriteTextFile();
         writeDecryptedTextFile.writeDecryptedTextToFile(getBackWhatsMine.decryptedText());
 
-        //-------------Show the result of the Original Text File Encryption and Decryption on screen------------
+        //---------Show the result of the Original Text File and Encryption and Decryption on screen-----------
         System.out.println("Original Text File : "  + new ReadTextFile("TextFile.txt").getTheString());
         System.out.println();
         System.out.println("ENCRYPTED Text File : " + readEncryptedTextFile.getTheString());
