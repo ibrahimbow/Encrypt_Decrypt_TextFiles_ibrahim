@@ -50,6 +50,7 @@ public class GeneratingMapCharacters extends MapCharacters{
         }
 
     // Here I create this method to get the generated fixed randomized Character made by my idea
+    //How? put the odd characters first then revers then put the even characters in the index value is 0
     private char[] generateCharacterArray(){
             char[] characterArray = new char[96];
             for (int i = 0; i < 96; i++) {
@@ -57,7 +58,7 @@ public class GeneratingMapCharacters extends MapCharacters{
                     characterArray[i] = (char) (i + START_CHARACTER_ASCII);
                     int temp = characterArray[i];
                     characterArray[i] = characterArray[characterArray.length - i - 1];
-                    characterArray[characterArray.length - i - 1] = (char) temp;
+                    characterArray[(characterArray.length - i) - 1] = (char) temp;
                 }
             }
 

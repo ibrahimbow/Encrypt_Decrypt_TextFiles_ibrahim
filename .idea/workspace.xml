@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b847cd1-abaf-4785-ae0a-d68ba12801b9" name="Default Changelist" comment="Encryption_Decryption_Text_Files_ibrahim">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DecryptedFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DecryptedFile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EncryptedFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EncryptedFile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encrypt_decrypt_textfiles/be/intecbrussel/encrypt_decrypt_text_file/characters_factory/GeneratingMapCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encrypt_decrypt_textfiles/be/intecbrussel/encrypt_decrypt_text_file/characters_factory/GeneratingMapCharacters.class" afterDir="false" />
+    <list default="true" id="6b847cd1-abaf-4785-ae0a-d68ba12801b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/characters_factory/GeneratingMapCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/characters_factory/GeneratingMapCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/decryption/DecryptTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/decryption/DecryptTextFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/encryption/EncryptTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/encryption/EncryptTextFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/io_textfiles/WriteTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/io_textfiles/WriteTextFile.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +36,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Encrypt_TextFileApp">
+  <component name="RunManager" selected="Application.Decrypt_EncryptedFilesApp">
     <configuration name="Decrypt_EncryptedFilesApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.intecbrussel.encrypt_decrypt_text_file.application.Decrypt_EncryptedFilesApp" />
       <module name="encrypt_decrypt_textfiles" />
@@ -74,8 +65,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Encrypt_TextFileApp" />
         <item itemvalue="Application.Decrypt_EncryptedFilesApp" />
+        <item itemvalue="Application.Encrypt_TextFileApp" />
       </list>
     </recent_temporary>
   </component>
@@ -90,6 +81,14 @@
       <option name="presentableId" value="Default" />
       <updated>1581353734718</updated>
     </task>
+    <task id="LOCAL-00001" summary="Encryption_Decryption_Text_Files_ibrahim">
+      <created>1581359636145</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581359636145</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
