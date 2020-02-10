@@ -42,11 +42,11 @@ public class GeneratingMapCharacters extends MapCharacters{
         return mapRandomGenerated;
     }
 
-    private Map<Character,Character> generateRandomFixedCharacters(Map<Character, Character> manRandomCharacters){
+    private Map<Character,Character> generateRandomFixedCharacters(Map<Character, Character> mapRandomCharacters){
         for (int i = 0; i < 96; i++) {
-            manRandomCharacters.put((char) (i+START_CHARACTER_ASCII)  , generateCharacterArray()[i]);
+            mapRandomCharacters.put((char) (i+START_CHARACTER_ASCII)  , generateCharacterArray()[i]);
             }
-            return manRandomCharacters;
+            return mapRandomCharacters;
         }
 
     // Here I create this method to get the generated fixed randomized Character made by my idea
