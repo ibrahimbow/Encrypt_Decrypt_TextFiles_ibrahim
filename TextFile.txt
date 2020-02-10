@@ -1,3 +1,5 @@
 Encryption is the process of encoding a message or information in such a way that only authorized parties can access it and those who are not authorized cannot. 
 
 And It can be encrypted if its Enter-Key in the Text File :)
+
+I know its crazy

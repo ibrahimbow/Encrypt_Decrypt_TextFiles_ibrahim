@@ -8,14 +8,8 @@ public class EncryptTextFile extends GeneratingMapCharacters {
     //------------------------DECLARATION----------------------------------
     private String textFileToBeEncrypted;
 
-    //------------------------CONSTRUCTION----------------------------------
-    public EncryptTextFile() {
-        // initiate the generating of MapCharacters
-        initMapCharacter();
-    }
-
     //--------------------------GETTERS-------------------------------------
-    public String getTextFileToBeEncrypted() {
+    private String getTextFileToBeEncrypted() {
         return textFileToBeEncrypted;
     }
 
@@ -26,7 +20,7 @@ public class EncryptTextFile extends GeneratingMapCharacters {
 
     //---------------------------METHODS------------------------------------
     //Encrypt TEXT... we just use this method to encrypt the text file through (MapCharacters)
-    private char[] firstMapEncrypted() throws IOException {
+    private char[] firstMapEncrypted() {
         char[] inputText = getTextFileToBeEncrypted().toCharArray();
         for (int i = 0; i <inputText.length ; i++) {
             while(true) {
@@ -40,39 +34,32 @@ public class EncryptTextFile extends GeneratingMapCharacters {
     }
 
     private char[] secondMapEncrypted(char[] mediumString) {
-        char[] inputText = mediumString;
-        for (int i = 0; i <inputText.length ; i++) {
+        for (int i = 0; i < mediumString.length ; i++) {
             while(true) {
-                if (getSecondMapChar().containsKey(inputText[i])) {
-                    inputText[i] = getSecondMapChar().get(inputText[i]);
+                if (getSecondMapChar().containsKey(mediumString[i])) {
+                    mediumString[i] = getSecondMapChar().get(mediumString[i]);
                     break;
                 }
             }
         }
-        return inputText;
+        return mediumString;
 
     }
 
     private String thirdMapEncrypted(char[] largeString) {
-        char[] inputText = largeString;
-        for (int i = 0; i <inputText.length ; i++) {
+        for (int i = 0; i < largeString.length ; i++) {
             while(true) {
-                if (getThirdMapChar().containsKey(inputText[i])) {
-                    inputText[i] = getThirdMapChar().get(inputText[i]);
+                if (getThirdMapChar().containsKey(largeString[i])) {
+                    largeString[i] = getThirdMapChar().get(largeString[i]);
                     break;
                 }
             }
         }
 
-        //use stringBuilder to convert the char array to be string
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(new String(inputText));
-        String content = stringBuilder.toString();
-
-        return content;
+        return new String(largeString);
     }
 
-    public String encryptedText()throws IOException{
+    public String encryptedText(){
         return thirdMapEncrypted(secondMapEncrypted(firstMapEncrypted()))
                 + thirdMapEncrypted(secondMapEncrypted(firstMapEncrypted())) ;
     }

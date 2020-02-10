@@ -8,17 +8,11 @@ public class DecryptTextFile extends GeneratingMapCharacters  {
     //------------------------DECLARATION---------------------------------
     private String textFileToBeDecrypted;
 
-    //------------------------CONSTRUCTOR---------------------------------
-    public DecryptTextFile() {
-        // initiate the generating of MapCharacters
-        initMapCharacter();
-    }
-
     //---------------------------GETTER------------------------------------
-    public String getTextFileToBeDecrypted() {
+    private String getTextFileToBeDecrypted() {
         // HERE WE RETURN THE NORMAL SIZE OF TEXT
         // BY REMOVING THE EXTRA TEXT THAT WE ADDED IT WHILE WE ENCRYPT THE TEXT FILE ;)
-        return textFileToBeDecrypted.substring(textFileToBeDecrypted.length()/2,textFileToBeDecrypted.length());
+        return textFileToBeDecrypted.substring(textFileToBeDecrypted.length()/2);
     }
 
     //---------------------------SETTER------------------------------------
@@ -43,32 +37,28 @@ public class DecryptTextFile extends GeneratingMapCharacters  {
     }
 
     private char[] secondMapDecrypted(char[] mediumArray) {
-        char[] inputText = mediumArray;
-        for (int i = 0; i <inputText.length ; i++) {
+        for (int i = 0; i < mediumArray.length ; i++) {
             for(Map.Entry<Character, Character> entry : getSecondMapChar().entrySet()){
-                if (entry.getValue().equals(inputText[i])) {
-                    inputText[i] = entry.getKey();
+                if (entry.getValue().equals(mediumArray[i])) {
+                    mediumArray[i] = entry.getKey();
                     break;
                 }
             }
         }
-        return inputText;
+        return mediumArray;
     }
 
     private String firstMapDecrypted(char[] smallArray) {
-        char[] inputText = smallArray;
-        for (int i = 0; i <inputText.length ; i++) {
+        for (int i = 0; i < smallArray.length ; i++) {
             for(Map.Entry<Character, Character> entry : getFirstMapChar().entrySet()){
-                if (entry.getValue().equals(inputText[i])) {
-                    inputText[i] = entry.getKey();
+                if (entry.getValue().equals(smallArray[i])) {
+                    smallArray[i] = entry.getKey();
                     break;
                 }
             }
         }
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(new String(inputText));
-        String content = stringBuilder.toString();
-        return content;
+
+        return  new String(smallArray);
     }
 
     // This method is to call all the methods that responsible of decryption the text and return the result as string

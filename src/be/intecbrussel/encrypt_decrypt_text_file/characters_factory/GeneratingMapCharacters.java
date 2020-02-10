@@ -9,31 +9,32 @@ public class GeneratingMapCharacters extends MapCharacters{
     private final static int END_CHARACTER_ASCII = 128;
 
     //--------------------------Constructor---------------------------------
-    public GeneratingMapCharacters() {
+     {
         initMapCharacter();
     }
 
     //--------------------------METHODS-------------------------------------
     //Initializing Map characters
-    public void initMapCharacter(){
+    private void initMapCharacter(){
+        // in case you want to try the random ThreadLocalRandom use this methods
 //        generateRandomMapCharacter(getFirstMapChar());
 //        generateRandomMapCharacter(getSecondMapChar());
 //        generateRandomMapCharacter(getThirdMapChar());
 
-        generateRandomCharacters(getFirstMapChar());
-        generateRandomCharacters(getSecondMapChar());
-        generateRandomCharacters(getThirdMapChar());
+        generateRandomFixedCharacters(getFirstMapChar());
+        generateRandomFixedCharacters(getSecondMapChar());
+        generateRandomFixedCharacters(getThirdMapChar());
 
     }
 
     //HERE IS THE FACTORY OF GENERATING THE RANDOM CHARACTERS
-    private Map<Character,Character> generateRandomMapCharacter(Map<Character, Character> mapRandomGenerated) {
+    private Map<Character,Character> generateRandomMapCharacters(Map<Character, Character> mapRandomGenerated) {
         for (int i = START_CHARACTER_ASCII; i < END_CHARACTER_ASCII; i++) {
             while(true) {
                 char charRandom = (char) ThreadLocalRandom.current().nextInt(START_CHARACTER_ASCII,END_CHARACTER_ASCII);
                 if (!mapRandomGenerated.containsValue(charRandom)) {
                     mapRandomGenerated.put((char) (i), charRandom);
-                    //System.out.print(" " + charRandom);
+                    //System.out.print(" " + charRandom);  // to show the result for test
                     break;
                 }
             }
@@ -41,7 +42,7 @@ public class GeneratingMapCharacters extends MapCharacters{
         return mapRandomGenerated;
     }
 
-    private Map<Character,Character> generateRandomCharacters(Map<Character, Character> manRandomCharacters){
+    private Map<Character,Character> generateRandomFixedCharacters(Map<Character, Character> manRandomCharacters){
         for (int i = 0; i < 96; i++) {
             manRandomCharacters.put((char) (i+START_CHARACTER_ASCII)  , generateCharacterArray()[i]);
             }
