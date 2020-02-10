@@ -49,8 +49,7 @@ public class GeneratingMapCharacters extends MapCharacters{
             return mapRandomCharacters;
         }
 
-    // Here I create this method to get the generated fixed randomized Character made by my idea
-    //How? put the odd characters first then revers then put the even characters in the index value is 0
+    // Here I created this method to get the generated fixed randomized Character made by my idea
     private char[] generateCharacterArray(){
             char[] characterArray = new char[96];
             for (int i = 0; i < 96; i++) {
