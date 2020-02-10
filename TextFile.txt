@@ -2,4 +2,4 @@ Encryption is the process of encoding a message or information in such a way tha
 
 And It can be encrypted if its Enter-Key in the Text File :)
 
-I know its crazy
+It sounds great ..!
