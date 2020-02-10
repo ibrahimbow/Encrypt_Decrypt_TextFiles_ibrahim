@@ -11,7 +11,7 @@ public class DecryptTextFile extends GeneratingMapCharacters  {
     //---------------------------GETTER------------------------------------
     private String getTextFileToBeDecrypted() {
         // HERE WE RETURN THE NORMAL SIZE OF TEXT
-        // BY REMOVING THE EXTRA TEXT THAT WE ADDED IT WHILE WE ENCRYPT THE TEXT FILE ;)
+        // BY REMOVING THE EXTRA TEXT THAT WE ADDED IT WHILE WE ENCRYPTED THE TEXT FILE ;)
         return textFileToBeDecrypted.substring(textFileToBeDecrypted.length()/2);
     }
 
