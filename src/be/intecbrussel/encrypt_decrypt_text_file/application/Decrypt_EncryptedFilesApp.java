@@ -7,7 +7,7 @@ import be.intecbrussel.encrypt_decrypt_text_file.io_textfiles.WriteTextFile;
 import java.io.IOException;
 
 public class Decrypt_EncryptedFilesApp {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws IOException{
 
         //==============================DECRYPTION===================================
         // Read the Encrypted File
@@ -21,7 +21,7 @@ public class Decrypt_EncryptedFilesApp {
         WriteTextFile writeDecryptedTextFile = new WriteTextFile();
         writeDecryptedTextFile.writeDecryptedTextToFile(getBackWhatsMine.decryptedText());
 
-        //-----------------Show the result of Encryption and Decryption on screen---------------
+        //-----------------Show the result of Decryption on screen---------------
         System.out.println("Original Text File : "  + new ReadTextFile("TextFile.txt").getTheString());
         System.out.println();
         System.out.println("ENCRYPTED Text File : " + readEncryptedTextFile.getTheString());

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b847cd1-abaf-4785-ae0a-d68ba12801b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/characters_factory/GeneratingMapCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/characters_factory/GeneratingMapCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/encryption/EncryptTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/encrypt_decrypt_text_file/encryption/EncryptTextFile.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581360380795</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Encryption_Decryption_Text_Files_ibrahim">
+      <created>1581360689929</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581360689929</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Encryption_Decryption_Text_Files_ibrahim">
+      <created>1581360753653</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581360753653</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

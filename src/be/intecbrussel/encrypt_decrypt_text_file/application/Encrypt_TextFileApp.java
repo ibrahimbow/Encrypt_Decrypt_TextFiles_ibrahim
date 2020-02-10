@@ -19,7 +19,7 @@ public class Encrypt_TextFileApp {
         WriteTextFile writeTextFile = new WriteTextFile();
         writeTextFile.writeEncryptedTextToFile(encryptTextFile.encryptedText());
 
-        //-----------------Show the result of Encryption and Decryption on screen---------------
+        //-----------------Show the result of Encryption on screen---------------
         System.out.println("Original Text File : "  + readTextFile.getTheString());
         System.out.println();
         System.out.println("ENCRYPTED Text File : " + encryptTextFile.encryptedText());

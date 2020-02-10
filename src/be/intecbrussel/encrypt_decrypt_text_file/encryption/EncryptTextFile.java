@@ -2,8 +2,6 @@ package be.intecbrussel.encrypt_decrypt_text_file.encryption;
 
 import be.intecbrussel.encrypt_decrypt_text_file.characters_factory.GeneratingMapCharacters;
 
-import java.io.IOException;
-
 public class EncryptTextFile extends GeneratingMapCharacters {
     //------------------------DECLARATION----------------------------------
     private String textFileToBeEncrypted;
