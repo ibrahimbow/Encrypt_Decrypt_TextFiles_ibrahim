@@ -8,7 +8,6 @@ public class GeneratingMapCharacters extends MapCharacters{
     private final static int START_CHARACTER_ASCII = 32;
     private final static int END_CHARACTER_ASCII = 128;
 
-    //--------------------------Constructor---------------------------------
      {
         initMapCharacter();
     }
